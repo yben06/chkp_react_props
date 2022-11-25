@@ -1,14 +1,18 @@
-
+import React from "react";
 import "./App.css";
-import Form from "./components/Form";
-function App() {
+import ProfilePhoto from "./components/Profile/ProfilePhoto";
+import Fullname from "./components/Profile/Fullname";
+import Adresse from "./components/Profile/Adresse";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Form/>
-      </header>
+    <div>
+      <ProfilePhoto />
+      <p>
+        <Fullname />
+        <Adresse />
+      </p>
     </div>
   );
-}
+};
 
 export default App;
