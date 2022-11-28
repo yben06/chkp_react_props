@@ -1,17 +1,15 @@
-import React from "react";
-import "./App.css";
-import ProfilePhoto from "./components/Profile/ProfilePhoto";
-import Fullname from "./components/Profile/Fullname";
-import Adresse from "./components/Profile/Adresse";
-const App = () => {
+import Profile from './profile/Profile';
+import './App.css';
+
+function App() {
+  var firstName = "Ben Ahmed"
+  var lastName = "Yassine"
+  var profession = "web developer"
+  var bio = "hello world!"
   return (
-    <div>
-      <ProfilePhoto />
-      <p>
-        <Fullname />
-        <Adresse />
-      </p>
-    </div>
+      <div className="App">
+        <Profile fname={firstName} lname={lastName} pro={profession} myBio={bio}><img src="/photo-de-profil-pro.jpg"></img></Profile>
+      </div>
   );
 };
 
