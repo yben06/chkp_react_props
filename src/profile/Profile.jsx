@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const Profile = (props) => {
     return (
@@ -10,11 +10,13 @@ const Profile = (props) => {
             {props.children}
         </div>
     );
-}
+};
+
 Profile.propTypes={
     fname:PropTypes.string,
     lname:PropTypes.string,
     pro:PropTypes.string,
-    myBio:PropTypes.any,
-  }
+    myBio:PropTypes.string,
+  };
+
 export default Profile;
